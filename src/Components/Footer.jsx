@@ -12,14 +12,14 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-white border-t border-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-5">
         <div>
           <div className="pb-5 flex justify-between items-center border-b border-white">
-            {footerApi.map((curElem) => {
+            {footerApi.map((curElem, index) => {
               const { icon, title, detail } = curElem
               const Icon = IconMap[icon]
               return (
-                <div className="flex items-center gap-5">
+                <div key={index} className="flex items-center gap-5">
                   <div>
                     <Icon className="text-3xl" />
                   </div>

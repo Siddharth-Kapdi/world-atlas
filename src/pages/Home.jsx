@@ -16,7 +16,7 @@ const Home = () => {
               through country to find the details you need.
             </p>
           </div>
-          <div className="w-45 px-4 py-2 rounded-xl flex items-center gap-4 border-2 border-white">
+          <div className="w-45 px-4 py-2 rounded-xl flex items-center gap-4 border border-white">
             <button className="font-bold">Start Explore</button> <FaArrowRight />
           </div>
         </div>

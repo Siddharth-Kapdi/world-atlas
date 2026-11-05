@@ -10,10 +10,13 @@ const About = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-          {countryData.map((country) => {
+          {countryData.map((country, index) => {
             const { countryName, capital, population, fact } = country
             return (
-              <div className="border-2 border-white p-3 flex flex-col justify-between gap-2 rounded-2xl">
+              <div
+                key={index}
+                className="border border-white p-3 flex flex-col justify-between gap-2 rounded-2xl"
+              >
                 <h3 className="text-2xl font-semibold">{countryName}</h3>
                 <p>
                   <span className="text-gray-400">Capital</span> : {capital}
