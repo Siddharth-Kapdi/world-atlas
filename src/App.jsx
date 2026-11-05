@@ -4,11 +4,13 @@ import About from './pages/About'
 import Country from './pages/Country'
 import Contact from './pages/Contact'
 import MainLayout from './Layouts/MainLayout'
+import ErrorPage from './pages/ErrorPage'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -28,7 +30,11 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
-  return <RouterProvider router={router}></RouterProvider>
+  return (
+    <div className="min-h-screen bg-gray-400">
+      <RouterProvider router={router}></RouterProvider>
+    </div>
+  )
 }
 
 export default App

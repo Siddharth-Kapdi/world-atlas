@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1428627663,
+    "fact": "India is the world's largest democracy."
+  },
+  {
+    "id": 2,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 123294513,
+    "fact": "Japan has more than 14,000 islands."
+  },
+  {
+    "id": 3,
+    "countryName": "France",
+    "capital": "Paris",
+    "population": 68170000,
+    "fact": "France is home to the Eiffel Tower."
+  },
+  {
+    "id": 4,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 27120000,
+    "fact": "Australia is both a country and a continent."
+  },
+  {
+    "id": 5,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 212600000,
+    "fact": "Brazil contains most of the Amazon rainforest."
+  },
+  {
+    "id": 6,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 41290000,
+    "fact": "Canada has the world's longest coastline."
+  },
+  {
+    "id": 7,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 116500000,
+    "fact": "Egypt is home to the ancient pyramids of Giza."
+  },
+  {
+    "id": 8,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 83570000,
+    "fact": "Germany has over 20,000 castles."
+  },
+  {
+    "id": 9,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": 58900000,
+    "fact": "Rome is home to the ancient Colosseum."
+  },
+  {
+    "id": 10,
+    "countryName": "South Korea",
+    "capital": "Seoul",
+    "population": 51750000,
+    "fact": "South Korea is famous for its technology and K-pop industry."
+  }
+]

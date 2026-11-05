@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "FaGlobe",
+    "title": "Explore Countries",
+    "detail": "Global Discovery"
+  },
+  {
+    "icon": "FaMapMarkedAlt",
+    "title": "World Map",
+    "detail": "Geographical Exploration"
+  },
+  {
+    "icon": "FaUsers",
+    "title": "Global Population",
+    "detail": "Population Statistics"
+  },
+  {
+    "icon": "FaInfoCircle",
+    "title": "Did You Know?",
+    "detail": "Interesting Facts"
+  }
+]
