@@ -25,12 +25,14 @@ const Country = () => {
     fetchData()
   }, [])
 
-  let filteredCountry = country.filter((curElem) => {
-    if (countryName !== '') {
-      return curElem.name.common.toLowerCase().includes(countryName.toLowerCase())
-    }
-    return []
-  })
+  const filteredCountry = country
+    .filter((curElem) => {
+      if (countryName !== '') {
+        return curElem.name.common.toLowerCase().includes(countryName.toLowerCase())
+      }
+      return []
+    })
+    .filter((curElem) => (region === '' ? true : curElem.region === region))
 
   const sortAsc = () => {
     const sorted = [...filteredCountry].sort((a, b) => a.name.common.localeCompare(b.name.common))
@@ -43,12 +45,6 @@ const Country = () => {
 
   const handleRegionChange = (e) => {
     setRegion(e.target.value)
-    if (e.target.value === '') {
-      setCountry(country)
-    } else {
-      const filtered = country.filter((curElem) => curElem.region === e.target.value)
-      setCountry(filtered)
-    }
   }
 
   if (loading) return <Loader />
@@ -71,13 +67,13 @@ const Country = () => {
           <div className="flex gap-5">
             <button
               className="border border-white px-3 py-1 rounded-md cursor-pointer"
-              onClick={() => sortAsc()}
+              onClick={sortAsc}
             >
               Asc
             </button>
             <button
               className="border border-white px-3 py-1 rounded-md cursor-pointer"
-              onClick={() => sortDesc()}
+              onClick={sortDesc}
             >
               Desc
             </button>

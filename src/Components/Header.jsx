@@ -3,7 +3,7 @@ import { MdMenu } from 'react-icons/md'
 
 const Header = () => {
   return (
-    <nav className="bg-black text-white border-t border-b border-white">
+    <nav className="bg-black text-white border-b border-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div>
           <NavLink to={'/'} className="text-3xl font-bold">
