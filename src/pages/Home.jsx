@@ -1,6 +1,7 @@
 import { FaArrowRight } from 'react-icons/fa'
 import worldMap from '../assets/worldMap.jpg'
 import About from './About'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -16,8 +17,13 @@ const Home = () => {
               through country to find the details you need.
             </p>
           </div>
-          <div className="w-45 px-4 py-2 rounded-xl flex items-center gap-4 border border-white">
-            <button className="font-bold">Start Explore</button> <FaArrowRight />
+          <div>
+            <NavLink
+              to={'/country'}
+              className="w-45 px-4 py-2 rounded-xl flex items-center gap-4 border border-white cursor-pointer"
+            >
+              <button className="font-bold">Start Explore</button> <FaArrowRight />
+            </NavLink>
           </div>
         </div>
         <div>
